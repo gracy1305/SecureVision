@@ -93,9 +93,9 @@ SecureVision/
 │   │   └── style.css
 │   ├── templates/
 │   │   ├── checklists/
+│   │   │   ├── index.html
+│   │   │   ├── new.html
 │   │   │   └── analyze.html
-│   │   ├── index.html
-│   │   ├── new.html
 │   │   ├── base.html
 │   │   ├── dashboard.html
 │   │   ├── home.html
@@ -103,6 +103,7 @@ SecureVision/
 │   │   └── register.html
 │   ├── __init__.py
 │   ├── forms.py
+│   ├── utils.py
 │   ├── gpt_utils.py
 │   ├── models.py
 │   └── routes.py
@@ -110,9 +111,10 @@ SecureVision/
 │   ├── ai_analysis.png
 │   ├── checklists.png
 │   └── dashboard.png
+├── migrations/
+├── instance/
 ├── .gitignore
 ├── config.py
-├── migrations/
 ├── README.md
 ├── requirements.txt
 ├── run.py  # Your Flask entry point
