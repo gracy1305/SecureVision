@@ -85,39 +85,106 @@ OPENAI_API_KEY=your_key_here
 flask run
 ```
 
-## Project Structure
+[//]: # (## Project Structure)
+
+[//]: # (SecureVision/)
+
+[//]: # (├── app/)
+
+[//]: # (│   ├──screenshots/)
+
+[//]: # (│   │  ├──ai_analysis.png)
+
+[//]: # (│   │  ├──checklists.png)
+
+[//]: # (│   │  └──dashboard.png)
+
+[//]: # (│   ├──static/)
+
+[//]: # (│   │  └──style.css)
+
+[//]: # (│   ├──templates/)
+
+[//]: # (│   │  ├──checklists/)
+
+[//]: # (│   │  │  ├──analyze.html)
+
+[//]: # (│   │  │  ├──index.html)
+
+[//]: # (│   │  │  └──new.html)
+
+[//]: # (│   │  ├──base.html)
+
+[//]: # (│   │  ├──dashboard.html)
+
+[//]: # (│   │  ├──home.html)
+
+[//]: # (│   │  ├──login.html)
+
+[//]: # (│   │  └──register.png)
+
+[//]: # (│   ├── .gitignore)
+
+[//]: # (│   ├── __init__.py)
+
+[//]: # (│   ├── forms.py)
+
+[//]: # (│   ├── gpt_utils.py)
+
+[//]: # (│   ├── models.py)
+
+[//]: # (│   ├── routes.py)
+
+[//]: # (│   └── utils.py)
+
+[//]: # (├── migrations)
+
+[//]: # (├── venv)
+
+[//]: # (├── config.py)
+
+[//]: # (├── README.md)
+
+[//]: # (├── requirements.txt)
+
+[//]: # (└── run.py      # Your Flask entry point)
+
+[//]: # (External Libraries)
+## 🗂️ Project Structure
+
+```
 SecureVision/
 ├── app/
-│   ├──screenshots/
-│   │  ├──ai_analysis.png
-│   │  ├──checklists.png
-│   │  └──dashboard.png
-│   ├──static/
-│   │  └──style.css
-│   ├──templates/
-│   │  ├──checklists/
-│   │  │  ├──analyze.html
-│   │  │  ├──index.html
-│   │  │  └──new.html
-│   │  ├──base.html
-│   │  ├──dashboard.html
-│   │  ├──home.html
-│   │  ├──login.html
-│   │  └──register.png
-│   ├── .gitignore
+│   ├── static/
+│   │   └── style.css
+│   ├── templates/
+│   │   ├── checklists/
+│   │   │   └── analyze.html
+│   │   ├── index.html
+│   │   ├── new.html
+│   │   ├── base.html
+│   │   ├── dashboard.html
+│   │   ├── home.html
+│   │   ├── login.html
+│   │   └── register.html
 │   ├── __init__.py
 │   ├── forms.py
 │   ├── gpt_utils.py
 │   ├── models.py
-│   ├── routes.py
-│   └── utils.py
-├── migrations
-├── venv
+│   └── routes.py
+├── screenshots/
+│   ├── ai_analysis.png
+│   ├── checklists.png
+│   └── dashboard.png
+├── .gitignore
 ├── config.py
+├── migrations/
 ├── README.md
 ├── requirements.txt
-└── run.py      # Your Flask entry point
-External Libraries
+├── run.py  # Your Flask entry point
+└── venv/
+```
+
 
 ## Security Notes
 - API keys are excluded via .gitignore
