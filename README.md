@@ -148,15 +148,5 @@ If this helped or inspired you, please consider ⭐️ starring the repo!
 git clone https://github.com/gracy1305/SecureVision.git
 ```
 
-## License
-This project is for educational and demo purposes only. Not production ready.
-```bash
-Let me know if you want:
-- A shorter version
-- A custom badge header
-- Or your screenshots embedded!
-
-Once added, your GitHub repo will look ✨ **clean**, **professional**, and **AI-cybersecurity ready** for your resume!
-```
 
 
