@@ -132,8 +132,8 @@ Demonstrates:
 - AI + Security intersection
 - Flask app architecture
 - Secure authentication
-Product thinking in a simulated enterprise app 
-Great for:
+
+Product thinking in a simulated enterprise app great for:
 - Cybersecurity portfolios
 - ML/AI-integrated product demos
 
