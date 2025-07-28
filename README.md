@@ -132,12 +132,10 @@ Demonstrates:
 - AI + Security intersection
 - Flask app architecture
 - Secure authentication
-- Product thinking in a simulated enterprise app
+Product thinking in a simulated enterprise app 
 Great for:
 - Cybersecurity portfolios
 - ML/AI-integrated product demos
-- Google or FAANG applications
-- Technical interviews
 
 Gracy Patel
 M.S. Computer Science | DePaul University
