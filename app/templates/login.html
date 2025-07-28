@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login | SecureVision</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body class="login-page">
+
+<div class="login-card">
+    <h1>Login to SecureVision</h1>
+
+    <form method="POST">
+    {{ form.hidden_tag() }}
+
+    <div class="form-group">
+        <label for="email">{{ form.email.label }}</label>
+        {{ form.email(class="form-control") }}
+    </div>
+
+    <div class="form-group">
+        <label for="password">{{ form.password.label }}</label>
+        {{ form.password(class="form-control") }}
+    </div>
+
+    <button type="submit" class="login-button">{{ form.submit.label.text }}</button>
+</form>
+
+    <div class="back-link">
+        Don’t have an account? <a href="{{ url_for('routes.register') }}">Register</a>
+    </div>
+</div>
+
+</body>
+</html>

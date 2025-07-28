@@ -1,0 +1,279 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f5f7fa;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.section {
+    margin-bottom: 2rem;
+}
+
+.section strong {
+    display: block;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: #222;
+}
+
+.summary-box {
+    background-color: #f0f4f8;
+    padding: 1rem;
+    border-left: 5px solid #007bff;
+    border-radius: 5px;
+    color: #333;
+}
+
+.download-button {
+    background: linear-gradient(to right, #007bff, #00bfff);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    font-weight: bold;
+    font-size: 0.95rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.download-button:hover {
+    background: linear-gradient(to right, #0056b3, #0099cc);
+}
+
+a {
+    color: #6a11cb;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.back-link {
+    margin-top: 2rem;
+    display: inline-block;
+}
+
+.alert-warning {
+    background-color: #fff4e5;
+    border-left: 5px solid #f0ad4e;
+    padding: 1rem;
+    border-radius: 4px;
+    color: #8a6d3b;
+    margin-bottom: 1.5rem;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    font-size: 1rem;
+}
+
+.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+.login-card {
+    background-color: #ffffff;
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    width: 420px;
+    text-align: center;
+}
+
+.login-card h1 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 1.8rem;
+}
+
+.login-button {
+    background: linear-gradient(to right, #007bff, #00bfff);
+    color: white;
+    padding: 12px;
+    border: none;
+    width: 100%;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    font-weight: bold;
+}
+
+.login-button:hover {
+    background: linear-gradient(to right, #0056b3, #0099cc);
+}
+
+.form-group {
+    text-align: left;
+    margin-bottom: 1.2rem;
+}
+
+.form-group label {
+    font-weight: 600;
+    display: block;
+    margin-bottom: 0.4rem;
+    color: #333;
+}
+
+.login-page {
+    background-color: #f5f7fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+}
+
+.login-card {
+    background: #fff;
+    padding: 2.5rem;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 420px;
+    text-align: center;
+}
+
+.login-card h1 {
+    font-size: 26px;
+    margin-bottom: 25px;
+    color: #2c3e50;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-button {
+    background-color: #00aaff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+    background-color: #008ecc;
+}
+
+.back-link {
+    margin-top: 1rem;
+    font-size: 14px;
+}
+.back-link a {
+    color: #8000d7;
+    text-decoration: none;
+}
+.back-link a:hover {
+    text-decoration: underline;
+}
+
+.login-button {
+    transition: all 0.3s ease-in-out;
+}
+
+.checklist-item {
+    background-color: #f9f9f9;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    border-left: 4px solid #007bff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: background 0.3s ease;
+}
+
+.checklist-item:hover {
+    background-color: #eef6ff;
+}
+
+.checklist-item strong {
+    font-size: 1.1rem;
+    color: #2c3e50;
+}
+
+.checklist-item small {
+    color: #666;
+    font-size: 0.85rem;
+}
+
+.delete-link,
+.analyze-link {
+    margin-right: 10px;
+    display: inline-block;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}
+
+.delete-link {
+    color: #d9534f;
+}
+
+.analyze-link {
+    color: #28a745;
+}
+
+.delete-link:hover,
+.analyze-link:hover {
+    text-decoration: underline;
+}
+
+.checklist-item {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+input::placeholder,
+textarea::placeholder {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 15px;
+    color: #888;
+}
+
+input,
+textarea {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 15px;
+    color: #333;
+}

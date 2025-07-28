@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard | SecureVision</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="login-page"> <!-- reuse login-page for centering -->
+
+    <div class="login-card"> <!-- reuse styled card layout -->
+
+        <h1>Welcome, {{ user.email }}</h1>
+        <p>This is your SecureVision dashboard.</p>
+
+        <div class="section" style="margin-top: 2rem;">
+            <a class="download-button" href="{{ url_for('routes.checklist_index') }}">📋 View Audit Checklists</a>
+        </div>
+
+        <div class="back-link">
+            <a href="{{ url_for('routes.logout') }}"><i class="fas fa-sign-out-alt"></i> Logout</a>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

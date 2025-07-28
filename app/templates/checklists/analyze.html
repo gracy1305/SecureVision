@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AI Risk Summary – SecureVision</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: #f9f9f9;
+            margin: 2rem auto;
+            padding: 2rem;
+            max-width: 900px;
+            border-radius: 8px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        h1 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            color: #333;
+        }
+
+        .section {
+            margin-bottom: 2rem;
+        }
+
+        .section strong {
+            display: block;
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+            color: #222;
+        }
+
+        .summary-box {
+            background-color: #f0f4f8;
+            padding: 1rem;
+            border-left: 5px solid #007bff;
+            border-radius: 5px;
+            color: #333;
+        }
+
+        .download-button {
+            background: linear-gradient(to right, #007bff, #00bfff);
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            font-weight: bold;
+            font-size: 0.95rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .download-button:hover {
+            background: linear-gradient(to right, #0056b3, #0099cc);
+        }
+
+        a {
+            color: #6a11cb;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .back-link {
+            margin-top: 2rem;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Audit Checklist: {{ checklist.title }}</h1>
+
+<div class="section">
+    <strong>Description:</strong>
+    <p id="desc-text">{{ checklist.description }}</p>
+</div>
+
+<div class="section">
+    <strong>AI Risk Summary:</strong>
+    <div class="summary-box" id="summary-text">{{ summary }}</div>
+</div>
+
+<button class="download-button" onclick="downloadSummary()">⬇ Download AI Summary</button>
+
+<div class="back-link">
+    <br><a href="{{ url_for('routes.checklist_index') }}">&larr; Back to Checklists</a>
+</div>
+
+<script>
+function downloadSummary() {
+    const title = {{ checklist.title|tojson }};
+    const description = document.getElementById("desc-text").innerText;
+    const summary = document.getElementById("summary-text").innerText;
+
+    const content = `Audit Checklist: ${title}\n\nDescription:\n${description}\n\nAI Risk Summary:\n${summary}`;
+    const blob = new Blob([content], { type: "text/plain" });
+
+    const link = document.createElement("a");
+    link.href = URL.createObjectURL(blob);
+    link.download = `${title.replace(/\s+/g, '_')}_summary.txt`;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+}
+</script>
+
+</body>
+</html>

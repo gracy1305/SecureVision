@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create Checklist | SecureVision</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="login-page">
+
+<div class="login-card" style="width: 500px;">
+    <h1>📝 New Audit Checklist</h1>
+
+    <form method="POST">
+        <div class="form-group">
+            <label for="title">Title</label>
+            <input type="text" name="title" class="form-control" placeholder="Enter title" required>
+        </div>
+
+        <div class="form-group">
+            <label for="description">Description</label>
+            <textarea name="description" class="form-control" rows="4" placeholder="Enter description..." required></textarea>
+        </div>
+
+        <button type="submit" class="login-button">Create Checklist</button>
+    </form>
+
+    <div class="back-link">
+        <a href="{{ url_for('routes.checklist_index') }}">← Back to Checklists</a>
+    </div>
+</div>
+
+</body>
+</html>

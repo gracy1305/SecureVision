@@ -1,0 +1,76 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Welcome | SecureVision</title>-->
+<!--    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">-->
+<!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">-->
+<!--    <style>-->
+<!--        .home-container {-->
+<!--            display: flex;-->
+<!--            flex-direction: column;-->
+<!--            align-items: center;-->
+<!--            justify-content: center;-->
+<!--            height: 100vh;-->
+<!--            text-align: center;-->
+<!--        }-->
+
+<!--        .home-container h1 {-->
+<!--            font-size: 2.5rem;-->
+<!--            color: #2c3e50;-->
+<!--            margin-bottom: 1.5rem;-->
+<!--        }-->
+
+<!--        .home-links {-->
+<!--            display: flex;-->
+<!--            flex-direction: column;-->
+<!--            gap: 1rem;-->
+<!--        }-->
+
+<!--        .home-links a {-->
+<!--            text-decoration: none;-->
+<!--            font-size: 1.1rem;-->
+<!--            padding: 10px 20px;-->
+<!--            border-radius: 6px;-->
+<!--            font-weight: bold;-->
+<!--            color: white;-->
+<!--            background: linear-gradient(to right, #007bff, #00bfff);-->
+<!--            transition: background 0.3s ease;-->
+<!--        }-->
+
+<!--        .home-links a:hover {-->
+<!--            background: linear-gradient(to right, #0056b3, #0099cc);-->
+<!--        }-->
+<!--    </style>-->
+<!--</head>-->
+<!--<body>-->
+<!--    <div class="home-container">-->
+<!--        <h1>🚀 Welcome to <strong>SecureVision</strong></h1>-->
+
+<!--        <div class="home-links">-->
+<!--            <a href="{{ url_for('routes.login') }}"><i class="fas fa-sign-in-alt"></i> Login</a>-->
+<!--            <a href="{{ url_for('routes.register') }}"><i class="fas fa-user-plus"></i> Register</a>-->
+<!--            <a href="{{ url_for('routes.dashboard') }}"><i class="fas fa-tachometer-alt"></i> Go to Dashboard</a>-->
+<!--            <a href="{{ url_for('routes.checklist_index') }}"><i class="fas fa-clipboard-check"></i> View Checklists</a>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</body>-->
+<!--</html>-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Welcome | SecureVision</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body class="login-page">
+  <div class="login-card">
+    <h1>Welcome to <span style="color:#007bff">SecureVision</span></h1>
+    <p style="margin: 1rem 0; font-size: 16px;">Your AI-powered audit companion.</p>
+    <a href="{{ url_for('routes.login') }}" class="login-button">Login</a>
+    <a href="{{ url_for('routes.register') }}" class="login-button" style="margin-top: 0.7rem;">Register</a>
+  </div>
+</body>
+</html>
+

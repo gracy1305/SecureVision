@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Audit Checklists | SecureVision</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="login-page" style="align-items: flex-start; padding-top: 40px;">
+<div class="login-card" style="width: 700px; text-align: left;">
+    <h1>📋 All Audit Checklists</h1>
+    <a href="{{ url_for('routes.checklist_new') }}" style="color: #007bff; font-weight: bold; display: inline-block; margin-bottom: 1rem;">
+        <i class="fas fa-plus-circle"></i> Add New
+    </a>
+
+    {% for item in checklists %}
+        <div class="checklist-item">
+            <strong>{{ item.title }}</strong> — {{ item.description }}<br>
+            <small>Created by {{ item.created_by }} on {{ item.created_at.strftime('%Y-%m-%d') }}</small><br>
+            {% if item.created_by == current_user.email %}
+                <a href="{{ url_for('routes.checklist_delete', id=item.id) }}" class="delete-link"><i class="fas fa-trash-alt"></i> Delete</a>
+                <a href="{{ url_for('routes.analyze_checklist', id=item.id) }}" class="analyze-link"><i class="fas fa-robot"></i> Analyze with AI</a>
+            {% endif %}
+        </div>
+    {% else %}
+        <p>No checklists yet.</p>
+    {% endfor %}
+
+    <div class="back-link" style="margin-top: 1.5rem;">
+        <a href="{{ url_for('routes.dashboard') }}">← Back to Dashboard</a>
+    </div>
+</div>
+</body>
+</html>
